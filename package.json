@@ -1,0 +1,23 @@
+{
+  "name": "@whitecloud-save/binding-addon",
+  "main": "lib/binding.js",
+  "dependencies": {
+    "node-addon-api": "^1.1.0"
+  },
+  "scripts": {
+    "test": "node --napi-modules ./test/test_binding.js"
+  },
+  "gypfile": true,
+  "version": "1.0.0",
+  "description": "whitecloud binding addon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitecloud-save/binding-addon.git"
+  },
+  "author": "yaya",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/whitecloud-save/binding-addon/issues"
+  },
+  "homepage": "https://github.com/whitecloud-save/binding-addon#readme"
+}
