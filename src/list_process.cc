@@ -35,9 +35,10 @@ std::string GetPathByProcessId(DWORD dwPid)
   if (hProcess == NULL)
     return "";
 
-  TCHAR QQpath[MAX_PATH] = { 0 };
-  GetModuleFileNameEx(hProcess, NULL, QQpath, MAX_PATH);
-  return wstring_TO_UTF8(QQpath);
+  TCHAR processPath[MAX_PATH] = { 0 };
+  GetModuleFileNameEx(hProcess, NULL, processPath, MAX_PATH);
+  CloseHandle(hProcess);
+  return wstring_TO_UTF8(processPath);
 }
 
 

@@ -129,3 +129,4 @@ run/*
 /dist*/
 build.sh
 /build/**/*
+/test/**/*
